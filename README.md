@@ -1,2 +1,13 @@
 # CryptoClustering
 Module 19 Clustering Assignment
+
+Module 19 Read Me 
+  This module was another great adaptation of the material presented in class. The subject matter seemed to be very applicable while being a great introduction to the field of unsupervised machine learning and what may be expected of data analysts in the future as AI grows in use cases and popularity within every sector of the world personally and professionally. 
+
+The introductory portion of the code consisted of basic manipulations within pandas as we were tasked with reading the CSV file, describing it, and then using HV Plot to visualize the data with each cryptocurrency. 
+
+The second part of the data took us through the data preprocessing process as we had to scale the data using standard scaler, create a new data frame using the latest data, set in the index to account for the unique cryptocurrencies, and then visualize the new data frame, which we would later use for the duration of the assignment as we created the required elbow curves, and the scatter plot for each of the iterations. 
+
+After initially scaling the data, we were required to create a for loop in which we fitted the newly created scaled data frame and calculated the inertia value for the first ten values of K. Using the list that I created to store the inertia values, I made a data frame consisting of the K and inertia values respectively. The final component was to develop an Elbow Curve using the data frame with the K values on the x-axis and the inertia values on the y-axis. The goal of creating the elbow curve is to hopefully determine the optimal number of clusters, to be used in connection with the K Means model of classifying each different value, in this case, each unique cryptocurrency, and which cluster it would belong to. The next portion of the assignment was to use the K Means model using the determined number of clusters to predict which cluster each cryptocurrency would belong to, and add the created cluster column to the scaled data frame. The final step is to create a scatter plot using HV Plot with the specified columns on the axes, using the created values as the distinct color with each currency as the overlay. 
+
+The next portion of the assignment was to replicate the previous portion of the code, except in this case, you would use the Principal Components Analysis (PCA) method to find the optimal number of clusters using the elbow method once again, as well as the K-Means method. After using the PCA model to transform the same scaled data frame, you repeat the process of creating the data frame, predicting the clusters, adding the new column to the data frame, and plotting the scatter plot using HV Plot once again. 
